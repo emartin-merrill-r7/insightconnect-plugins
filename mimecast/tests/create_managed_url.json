@@ -2,16 +2,21 @@
     "body": {
         "action": "create_managed_url",
         "connection": {
-            "app_id": null,
+            "app_id": "83ef489c-fdbf-4cca-afd5-5d2bb5350ace",
             "app_key": {
-                "secretKey": null
+                "secretKey": "44e13412-7049-4826-8736-05fc1ccff432"
             },
-            "auth_type": null,
             "credentials": {
-                "password": null,
-                "username": null
+                "password": "L6+Q4g[{P=BmZBM",
+                "username": "test@rapid7.com"
             },
-            "url": null
+            "url": "https://sandbox-api.mimecast.com",
+	    "access_key" : {
+                "secretKey": "mYtOL3XZCOwG96BOiFTZRiC5rdvDmP4FFdwU2Y1DC1Us-nk2JcI7ynUrZ9aEuzQMV7pPWWxTnPVtsJ6x3fajAh3cRskP0w8hNjaFFVkZB6EFLSKjzsvEO47qNibOVexA"
+            },
+	    "secret_key" : {
+                "secretKey": "TXLipVLAL+vURwR3tNSrfcLyDkvJtk+jyqd01RAGKEyGUuh0OSUCPLXmhTDhLuGCnKWTMPMzr3BUHcULfHFK0w=="
+            }
         },
         "input": {
             "action": "block",
@@ -21,8 +26,7 @@
             "disable_user_awareness": false,
             "match_type": "explicit",
             "url": "http://youtube.com"
-        },
-        "meta": {}
+        }
     },
     "type": "action_start",
     "version": "v1"
