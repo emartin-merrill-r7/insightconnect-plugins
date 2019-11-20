@@ -15,7 +15,6 @@ resources:
 tags:
 - mimecast
 - email
-
 types:
   managed_url:
     comment:
@@ -362,6 +361,26 @@ actions:
       response:
         title: Managed URL
         description: Managed URL that was created
+        type: '[]managed_url'
+        required: false
+  delete_managed_url:
+    title: Delete Managed URL
+    description: Delete a managed URL
+    input:
+      url:
+        title: URL
+        description: The URL to unblock or permit. This must match a URL that is already in.
+        type: string
+        required: true
+      comment:
+        title: Comment
+        description: A comment about the why the URL is being unblocked; for tracking purposes
+        type: string
+        required: false
+    output:
+      response:
+        title: Managed URL
+        description: Managed URL that is no longer blocked
         type: '[]managed_url'
         required: false
   get_managed_url:
